@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="author" content="Diego Martinez Garcia">
+    <link rel="stylesheet" href="styleProject.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title" id="top">Diego's Final Project</h1>
+    </header>
+    <nav id="menu">
+        <ul id="navList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contact Diego</h2>
+        <section id="form">
+            <form action="url" method="post">
+                <fieldset> <!--Making sections inside the for to improve accesibility-->
+                    <legend>Contact Information</legend>
+                    <p><label for="name" class="contact">Name: </label><input type="text" size="30" name="name" id="name"
+                            placeholder="Joe Doe" title="Provide your name"></p>
+                    <p><label for="email" class="contact">Email: </label><input type="email" size="30" name="email"
+                            id="email" placeholder="example@example.com" title="Provide your email"></p>
+                    <p><label for="phone" class="contact">Phone: </label><input type="tel" size="30" name="phone"
+                            id="phone" placeholder="111-111-1111:" title="Provide your phone number"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <p>
+                        <lable for="topic" class="message">Topic: </lable><input type="text" id="topic" maxlength="75"
+                            name="topic" placeholder="Chicken Nuggets:" title="Prove the topic of the message">
+                    </p>
+                    <textarea name="message" id="messagebox" cols="40" rows="10"
+                        placeholder="Hello Diego, my name is..." title="Type your message here!"></textarea>
+                </fieldset>
+                <p><input type="submit" value="Submit" > <input type="reset" value="Clear" ></p>
+            </form>
+        </section>
+        <!--End of form-->
+        <br>
+        <section id="socialMedia">
+            <h3>Connect with Diego directly:</h3>
+            <ul id="socialMediaList">
+                <li>GitHub:<a href="https://github.com/d-mg17" target="_blank">@d-mg17</a></li>
+                <li>Email: <a href="mailto:diego.martinez13@upr.edu" target="_blank">diego.martinez13@upr.edu</a></li>
+                <li>Linkedin: <a href="https://www.linkedin.com/in/d-mg17/" target="_blank" >@d-mg17</a></li>
+                <li><a href="about.html" id="get2know">Get to know Diego better</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2022, Web designer: Diego Martinez Garcia.</p>
+        <p><a href="#top">Go back to the top</a></p>
+    </footer>
+
+</body>
+
+</html>

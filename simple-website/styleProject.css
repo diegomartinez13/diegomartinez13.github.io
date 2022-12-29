@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Karla&family=Montserrat:wght@100;500&display=swap');
+
+body {
+    /* Clearing browser's default margin and padding */
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: #17202A;
+    color: #fff;
+}
+h2, h3{
+    font-family: 'Comfortaa', cursive;
+}
+h2{
+    text-align: center;
+}
+h3{
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #00FF66;
+}
+a:hover{ /*Adding a glow effect to links*/
+    text-shadow: 0 0 8px #fff;
+}
+
+header{
+    height: 200px;
+    background: url(media/matrix-g2c754e09e_1280.jpg) top center fixed;
+    background-size: 1240px 300px;
+    z-index: 1;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #00FF66;
+    font-size: 3em;
+    font-weight: bolder;
+    padding-top: 60px;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px black;
+}
+
+#navList{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#navList li, #socialMediaList li, input[type=submit], input[type=reset]{
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+#navList li a{
+    display: block;
+    color: #5DADE2;
+    border: 6px outset #c9f2f4;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em .5em;
+    background-color: #2E4053;
+    text-decoration: none;
+    font-weight: normal;
+}
+#navList li a:hover{
+    color: #00FF66;
+    background-color: #2E4053;
+}
+#navList li a:active{
+    border: 6px inset #C9F2F4;
+    background-color: #006064;
+    color: #fff;
+}
+nav#menu{
+    position: sticky;
+    top: 0;
+    background-color: #2E4053;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	clear: both; /* cleaning floats*/
+	background-color: #2E4053;
+	color:  #fff;
+	padding-top: 4px;
+    text-align: center;
+    margin-top: 2em;
+}
+
+textarea{
+    resize: none;
+}
+input{
+    width: 200px;
+}
+input, textarea{
+    background-color: #DCC2DD;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000;
+}
+form, #socialMedia{
+    width: 600px;
+    margin: 30px auto;
+    text-align: center;
+}
+fieldset{
+    border: none;
+}
+#socialMediaList li{
+    margin-bottom: 5px;
+    list-style-position: inside;
+    list-style-type: square;
+    color: #5DADE2;
+}
+#socialMediaList{
+    margin-top: 0;
+}
+input[type=submit], input[type=reset]{
+    color: #5DADE2;
+    border: 2px outset #c9f2f4;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em .5em;
+    background-color: #2E4053;
+    text-decoration: none;
+    cursor: pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover{
+    color: #00FF66;
+    border-color: #00FF66;
+    text-shadow: 0 0 8px #fff;
+}
+
+.intro{
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+}
+.container{
+    display: flex;
+    border: #1B2631 solid 4px;
+    border-radius: 10px;
+    padding: 15px 25px;
+    flex-direction: row;
+    text-align: center;
+    margin: 10px auto;
+    width: 55%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #212F3C;
+}
+.content{
+    border: #283747 solid 4px;
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #2E4053;
+}
+.content a{
+    text-decoration: underline dotted;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+#projects-container{
+    width: 1000px;
+}
+.projects{
+    border: #283747 solid 4px;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #2E4053;
+    text-transform: uppercase;
+}
+
+#about{
+    text-align: justify;
+    width: 80%;
+}
+#about-container{
+    display: flex;
+    justify-content: center;
+    background-color: #212F3C;
+    border: #283747 solid 4px;
+    border-radius: 20px;
+}
+.about-text{
+    width: 470px;
+    height: 500px;
+    margin: 0 5px;
+    padding: 15px;
+    font-size: 1em;
+    /* background-color: #2E4053; */
+}
+
+marquee, marquee a, marquee a:hover{
+    background-color: #fff;
+    height: 30px;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bold;
+    color: red;
+    text-shadow: 0 4px 2px orange;
+}
+
+/* Simple progress bar */
+.bar{
+    background-color: darkslategrey;
+    height: 25px;
+}
+#progress{
+    width: 65%;
+    color: #17202A;
+    background-color: #00FF66;
+    font-weight: bolder;
+}
+/* End of progress bar */
